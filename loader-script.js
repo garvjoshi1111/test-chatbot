@@ -3,7 +3,7 @@
   function findChatbotScript() {
     var scripts = document.getElementsByTagName("script");
     for (var i = 0; i < scripts.length; i++) {
-      if (scripts[i].src.indexOf("chatbot-loader.js") > -1) {
+      if (scripts[i].src.indexOf("loader-script.js") > -1) {
         return scripts[i];
       }
     }
@@ -46,6 +46,6 @@
 
   var script = document.createElement("script");
   script.src =
-    "https://github.com/garvjoshi1111/test-chatbot/blob/main/chatbot.js";
+    "https://cdn.jsdelivr.net/gh/garvjoshi1111/test-chatbot/chatbot.js";
   document.head.appendChild(script);
 })();
